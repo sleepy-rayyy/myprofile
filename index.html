@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Portfolio</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Inter for clean typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Smooth transition for social buttons */
+        .social-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Lift effect on hover */
+        .social-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Brand specific hover colors */
+        .btn-facebook:hover { 
+            background-color: #1877F2; 
+            border-color: #1877F2; 
+        }
+        
+        .btn-instagram:hover { 
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+            border-color: transparent; 
+        }
+        
+        .btn-tiktok:hover { 
+            background-color: #000000; 
+            border-color: #69C9D0; 
+            box-shadow: 0 4px 15px rgba(105, 201, 208, 0.3); 
+        }
+        
+        .btn-discord:hover { 
+            background-color: #5865F2; 
+            border-color: #5865F2; 
+        }
+        
+        .btn-github:hover { 
+            background-color: #2b3137; 
+            border-color: #2b3137; 
+        }
+    </style>
+</head>
+<body class="bg-slate-950 min-h-screen text-slate-200 flex items-center justify-center p-4 antialiased relative overflow-hidden">
+    
+    <!-- Subtle Background Glows (Minimalist touch) -->
+    <div class="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <!-- Main Content Container -->
+    <main class="w-full max-w-sm bg-white/[0.03] backdrop-blur-xl border border-white/10 p-8 rounded-[2rem] shadow-2xl relative z-10 flex flex-col items-center">
+        
+        <!-- Profile Picture -->
+        <div class="relative w-32 h-32 mb-5 group">
+            <!-- Glowing effect behind image on hover -->
+            <div class="absolute inset-0 bg-white rounded-full blur-md opacity-0 group-hover:opacity-20 transition duration-500"></div>
+            <!-- Replace the src URL with your actual profile picture -->
+            <img src="avatar.webp" 
+                 alt="Profile" 
+                 class="relative w-full h-full object-cover rounded-full border border-white/20 shadow-xl transition duration-300 group-hover:border-white/40">
+        </div>
+
+        <!-- Name -->
+        <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-8 text-center">
+            John Raymart G. Dordines
+        </h1>
+
+        <!-- Social Media Buttons List -->
+        <div class="w-full flex flex-col gap-3.5">
+            
+            <!-- Facebook Button -->
+            <!-- Add your Facebook link inside the href="..." -->
+            <a href="https://www.facebook.com/sleepyrayyyy" target="_blank" rel="noopener noreferrer" 
+               class="social-btn btn-facebook w-full flex items-center justify-center gap-3 py-3.5 px-6 bg-white/5 border border-white/10 rounded-2xl text-white font-medium hover:text-white">
+                <i class="fa-brands fa-facebook-f text-xl w-6 text-center"></i>
+                <span class="text-base tracking-wide">Facebook</span>
+            </a>
+            
+            <!-- Instagram Button -->
+            <!-- Add your Instagram link inside the href="..." -->
+            <a href="https://www.instagram.com/raysocutie/" target="_blank" rel="noopener noreferrer" 
+               class="social-btn btn-instagram w-full flex items-center justify-center gap-3 py-3.5 px-6 bg-white/5 border border-white/10 rounded-2xl text-white font-medium hover:text-white">
+                <i class="fa-brands fa-instagram text-xl w-6 text-center"></i>
+                <span class="text-base tracking-wide">Instagram</span>
+            </a>
+
+            <!-- TikTok Button -->
+            <!-- Add your TikTok link inside the href="..." -->
+            <a href="https://www.tiktok.com/@ray.sleepy" target="_blank" rel="noopener noreferrer" 
+               class="social-btn btn-tiktok w-full flex items-center justify-center gap-3 py-3.5 px-6 bg-white/5 border border-white/10 rounded-2xl text-white font-medium hover:text-white">
+                <i class="fa-brands fa-tiktok text-xl w-6 text-center"></i>
+                <span class="text-base tracking-wide">TikTok</span>
+            </a>
+
+            <!-- Discord Button -->
+            <!-- Add your Discord link inside the href="..." -->
+            <a href="https://discord.gg/zpen3uchg5" target="_blank" rel="noopener noreferrer" 
+               class="social-btn btn-discord w-full flex items-center justify-center gap-3 py-3.5 px-6 bg-white/5 border border-white/10 rounded-2xl text-white font-medium hover:text-white">
+                <i class="fa-brands fa-discord text-xl w-6 text-center"></i>
+                <span class="text-base tracking-wide">Discord</span>
+            </a>
+
+            <!-- GitHub Button -->
+            <!-- Add your GitHub link inside the href="..." -->
+            <a href="https://github.com/sleepy-rayyy" target="_blank" rel="noopener noreferrer" 
+               class="social-btn btn-github w-full flex items-center justify-center gap-3 py-3.5 px-6 bg-white/5 border border-white/10 rounded-2xl text-white font-medium hover:text-white">
+                <i class="fa-brands fa-github text-xl w-6 text-center"></i>
+                <span class="text-base tracking-wide">GitHub</span>
+            </a>
+
+        </div>
+    </main>
+    
+</body>
+</html>
